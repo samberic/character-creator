@@ -1,13 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import CharacterEditor from './components/CharacterEditor';
-import Footer from './components/Footer';
+import CharacterEditor from "./components/CharacterEditor";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <CharacterEditor />
-      <Footer />
+      <div
+        style={{
+          position: "fixed",
+          top: "60%",
+          height: "40%",
+          width: "100%",
+          backgroundColor: "grey",
+        }}
+      />
+      <div
+        style={{
+          isolation: "isolate",
+        }}
+      >
+        <CharacterEditor />
+        <Footer />
+      </div>
     </>
   );
 }

@@ -1,2 +1,4 @@
 .buttonRow {
+  overflow-x: scroll;
+  text-wrap: nowrap;
 }
